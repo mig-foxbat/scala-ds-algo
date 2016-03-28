@@ -1,6 +1,6 @@
 package org.examples
 
-import org.examples.sort.MergeSort
+import org.examples.sort.QuickSort
 
 /**
  * Created by chlr on 3/27/16.
@@ -8,7 +8,7 @@ import org.examples.sort.MergeSort
 
 
 object Main extends App {
-  val input = 10 :: 4 :: 7 :: 2 :: 87 :: 0 :: Nil
-  val output = MergeSort.sort(input)
+  val input = 10 :: -1 :: Nil
+  val output = QuickSort.sort(input)
   println(output)
 }
