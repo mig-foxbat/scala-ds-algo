@@ -6,6 +6,11 @@ package org.examples.sort
 
 object BubbleSort {
 
+  /**
+   *
+   * @param xs list to be sorted
+   * @return sorted list
+   */
   def sort(xs: List[Int]): List[Int] = {
     bubbleSort(xs) match {
       case Nil => xs
@@ -14,6 +19,12 @@ object BubbleSort {
     }
   }
 
+  /**
+   * performs compare and swap if the first number is larger of all adjacent numbers in the list
+   * guarantees the largest number in the list is the last element of the list
+   * @param xs list to be sorted
+   * @return quasi sorted list
+   */
   private def bubbleSort(xs: List[Int]): List[Int] = {
     xs match {
       case Nil => xs
