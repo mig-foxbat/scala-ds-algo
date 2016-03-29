@@ -76,7 +76,6 @@ object HeapSort extends Sortable {
           swapFlag = true
         }
       }
-      println(data.mkString(","))
       if (swapFlag)
         minHeapify()
     }
@@ -89,7 +88,6 @@ object HeapSort extends Sortable {
      * @return the value of the root node in the heap before reHeapfying process
      */
     private def fetchHeapRootAndReHeapify: Int = {
-      println("Start FetchHeapRoot")
       val output = data.headOption map { _.value }
       data = this.buildBinaryTree(data.tail map (_.value))
       this.minHeapify()
