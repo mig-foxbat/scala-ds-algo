@@ -4,14 +4,14 @@ package org.examples.sort
  * Created by chlr on 3/27/16.
  */
 
-object BubbleSort {
+object BubbleSort extends Sortable {
 
   /**
    *
    * @param xs list to be sorted
    * @return sorted list
    */
-  def sort(xs: List[Int]): List[Int] = {
+  override def sort(xs: List[Int]): List[Int] = {
     bubbleSort(xs) match {
       case Nil => xs
       case l1 :: Nil => l1 :: Nil

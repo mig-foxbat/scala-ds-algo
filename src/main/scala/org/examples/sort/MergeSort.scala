@@ -3,7 +3,7 @@ package org.examples.sort
 /**
  * Created by chlr on 3/27/16.
  */
-object MergeSort {
+object MergeSort extends Sortable {
 
   /**
    * Merge sort implementation
@@ -11,7 +11,7 @@ object MergeSort {
    * @param ls list to be sorted
    * @return sorted list
    */
-  def sort(ls: List[Int]): List[Int] = {
+  override def sort(ls: List[Int]): List[Int] = {
     ls match {
       case Nil => ls
       case (l1 :: Nil) => ls

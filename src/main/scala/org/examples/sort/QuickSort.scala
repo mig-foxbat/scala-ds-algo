@@ -3,14 +3,14 @@ package org.examples.sort
 /**
  * Created by chlr on 3/27/16.
  */
-object QuickSort {
+object QuickSort extends Sortable {
 
   /**
    *
    * @param xs list to be sorted
    * @return sorted list
    */
-  def sort(xs: List[Int]): List[Int] = {
+  override def sort(xs: List[Int]): List[Int] = {
     xs match {
       case Nil => xs
       case l1 :: Nil => l1 :: Nil

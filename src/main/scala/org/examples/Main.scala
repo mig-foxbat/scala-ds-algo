@@ -1,6 +1,6 @@
 package org.examples
 
-import org.examples.sort.BubbleSort
+import org.examples.sort.HeapSort
 
 /**
  * Created by chlr on 3/27/16.
@@ -8,7 +8,8 @@ import org.examples.sort.BubbleSort
 
 
 object Main extends App {
-  val input = 10 :: 6 :: 10  :: -1 :: -1 :: Nil
-  val output = BubbleSort.sort(input)
+  val input = 70:: 60 :: 35 :: 23 :: 10 :: 4 :: Nil
+  val output = HeapSort.sort(input)
+  println(input)
   println(output)
 }
